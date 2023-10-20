@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  nestjs:
+    build:
+      context: ./nestjs
+    ports:
+      - "3000:3000"
+    depends_on:
+      - golang
+
+  golang:
+    build:
+      context: ./golang
+    ports:
+      - "50051:50051"
