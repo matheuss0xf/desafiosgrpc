@@ -9,4 +9,3 @@ Como executar a aplicação
 
     Acesse o container da aplicação executando: docker exec -it golang-app-1 bash
     Rode go run main.go para rodar o servidor grpc
-    Rode go run client/main.go para rodar o client
